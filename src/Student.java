@@ -12,10 +12,23 @@ public class Student {
 
     String lastName;
 
-    String Class;
+    String room;
 
-    List<Student> studentList;
+    long schoolNumber;
+
+    List<String> learnedLessons;
+
+    int presentDayNumber;
 
 
+    public List<String> study(String lesson){
+        learnedLessons.add(lesson);
+        return learnedLessons;
+    }
+
+    public int goToSchool(){
+        presentDayNumber = presentDayNumber + 1;
+        return presentDayNumber;
+    }
 
 }
